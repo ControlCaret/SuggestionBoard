@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&subset=korean');
+@import "//fonts.googleapis.com/css?family=Noto+Sans";
+
+body, html {
+    height: 100%;
+    font-family: '나눔 고딕', 'Nanum Gothic', '맑은 고딕', 'Malgun Gothic', sans-serif !important;
+}
+
+.bg {
+    background:         linear-gradient(to 45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+    background:    -moz-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ieWarning {
+    font-size: 0.8em;
+    display:none;
+}
+
+.row-p {
+    padding-top: 5%;
+}
+
+.fa-1x {
+    font-size: 1.5rem;
+}
+
+.nav-orderbytime {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.sidebar-mobile {
+    padding: 5px;
+}
+
+.btn-mobile {
+    padding: 1em 1.25em;
+}
+
+.titlebg {
+    background: rgba(0, 200, 81, 1);
+}
+
+.btn {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.modal-footer {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card-footer {
+    padding: 4px;
+}
+
+ul {
+    list-style: none;
+}
+
+.ml-0 {
+    margin-left: 0 !important;
+}
+
+.mr-1 {
+    margin-right: ($spacer-y * .25) !important;
+}
+
+.mb-1 {
+    margin-bottom: ($spacer-y * .25) !important;
+}
+
+.mb-4 {
+    margin-bottom: ($spacer-x * 1.5) !important;
+}
+
+.em-1 {
+    font-size: 1em;
+}
+
+.btn-vote {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+
+.btn-comment {
+    padding: 0.75rem 0.75rem;
+}
+
+.btn-search {
+    padding: 0.7rem;
+}
+
+.btn-round {
+    border-radius: 100px;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    margin: 0;
+}
