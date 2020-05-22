@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>학교 건의게시판</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <style type="text/css">
+            ::-webkit-scrollbar { 
+                display: none; 
+            }
+        </style>
+
+    </head>
+    <body onload="msieCheck(); //$('#cookieModal').modal();">
+        <div class="bg">
+            <div class="container">
+                <div class="row row-p d-flex justify-content-center">
+                    <div class="col d-flex justify-content-center">
+                        <div class="card wow fadeIn">
+                            <h4 class="card-header success-color white-text text-center py-4">
+                                <strong>학교 건의게시판</strong>
+                            </h4>
+                            <div class="card-body px-lg-5">
+                                <form class="text-center" style="color: #757575;" action="session.php" method="POST">
+                                    <p>학교에서 불편한 점이 있나요?</p>
+                                    <p>이곳에서 당신의 건의사항을 모두에게 알리세요!</p>
+                                    <div class="md-form mt-3">
+                                        <label>학번(*)</label>
+                                        <input type="text" class="form-control" name="schoolid" autocomplete="off" required>
+                                        </div>
+                                    <div class="md-form mt-3">
+                                        <label>이름</label>
+                                        <input type="text" class="form-control" name="name" autocomplete="off">
+                                    </div>
+                                    <button class="btn btn-round btn-outline-success btn-block z-depth-0 my-4 waves-effect" id="connectButton" type="submit">접속하기</button>
+                                    <p id="ieWarning">Internet Explorer 에서는 사이트가 원할하게 보이지 않을 수 있습니다.<br>원할한 사용을 위해 <a href="https://chrome.google.com/" target="_blank">Chrome</a>을 설치하세요.<br>무시하고 계속 진행하시려면 <a onclick="ieIgnore();"><b>이곳</b></a>을 눌러주세요.</p>
+                                    <h6>* 이름을 공백으로 둘 시 익명으로 접속됩니다.<br>
+                                        * 익명으로는 투표를 할 수 없습니다.<br>
+                                        * 학번은 필수이지만 공개는 되지 않습니다.<br>
+                                    </h6>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade bottom" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="cookieModal" aria-hidden="true" data-backdrop="true">
+                    <div class="modal-dialog modal-frame modal-bottom" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="row d-flex justify-content-center align-items-center">
+                                <p class="pt-3 pr-2">향상된 서비스를 제공하기 위해, 우리는 쿠키를 수집하고 있습니다. 이 웹사이트를 계속 사용하면, <a href="cookie_policy.html">쿠키정책</a>에 동의하는 것으로 간주하겠습니다.</p>
+                                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <!-- Custom JavaScript -->
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
